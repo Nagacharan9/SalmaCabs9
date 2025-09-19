@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salma Cabs | Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header>
+    <div class="logo">🚗 <span class="brand">Salma Cabs</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trips.html">Available Trips</a>
+      <a href="admin.html" class="active">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <div id="admin-lock">
+      <h2>Admin Login</h2>
+      <form id="admin-login-form">
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="admin-password" required>
+        </div>
+        <button type="submit" class="search-btn">Unlock</button>
+      </form>
+      <div id="admin-error" style="color:red; margin-top:1rem;"></div>
+    </div>
+    <div id="admin-panel" style="display:none;">
+      <h2>
+        Manage Trips
+        <span id="add-trip-btn" class="material-icons add-icon" title="Add New Trip">add_circle</span>
+      </h2>
+      <div id="admin-trip-list"></div>
+      <div id="add-trip-modal" class="modal">
+        <div class="modal-content">
+          <span id="close-add-trip" class="close">&times;</span>
+          <h3>Add New Trip</h3>
+          <form id="add-trip-form">
+            <div class="form-group">
+              <label>From</label>
+              <input type="text" id="add-from" required>
+            </div>
+            <div class="form-group">
+              <label>To</label>
+              <input type="text" id="add-to" required>
+            </div>
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date" id="add-date" required>
+            </div>
+            <div class="form-group">
+              <label>Driver</label>
+              <input type="text" id="add-driver" required>
+            </div>
+            <div class="form-group">
+              <label>Seats Available</label>
+              <input type="number" id="add-seats" min="1" required>
+            </div>
+            <button type="submit" class="search-btn">Add Trip</button>
+          </form>
+        </div>
+      </div>
+      <h2>Bookings Received</h2>
+      <div id="admin-bookings"></div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 <span class="brand">Salma Cabs</span>. All rights reserved.
+  </footer>
+  <script src="admin.js"></script>
+</body>
+</html>
