@@ -1,0 +1,253 @@
+body {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #008cff 0%, #00c6a7 100%);
+  margin: 0;
+  min-height: 100vh;
+  color: #222;
+}
+header {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  padding: 1.2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,140,255,0.08);
+}
+.logo {
+  font-size: 2.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 18px #00c6a7;
+  margin-bottom: 0.4rem;
+}
+.brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #008cff;
+}
+nav {
+  margin-top: 0.4rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 600;
+  transition: text-shadow 0.2s, color 0.2s;
+  font-size: 1.08rem;
+}
+nav a.active, nav a:hover {
+  text-shadow: 0 0 8px #fff;
+  color: #00c6a7;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.5rem;
+  min-height: 70vh;
+}
+.center-section {
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.97);
+  border-radius: 1.3rem;
+  box-shadow: 0 2px 18px rgba(0,140,255,.14);
+  text-align: center;
+  padding: 2.2rem 1rem 2rem 1rem;
+}
+.center-section h1 {
+  font-size: 2rem;
+  color: #008cff;
+  margin: 0.8rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.big-btns {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-btn {
+  background: linear-gradient(90deg, #008cff 70%, #00c6a7 100%);
+  color: #fff;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 12px rgba(0,140,255,.14);
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.2s;
+  margin-top: 0.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.main-btn:hover, .admin-btn:hover {
+  background: linear-gradient(90deg, #00c6a7 70%, #008cff 100%);
+  box-shadow: 0 4px 16px #00c6a7;
+}
+.admin-btn {
+  background: linear-gradient(90deg, #00c6a7 70%, #008cff 100%);
+}
+.search-section {
+  background: rgba(255,255,255,0.96);
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 1.3rem;
+  box-shadow: 0 2px 18px rgba(0,140,255,.14), 0 0.5px 2px rgba(0,198,167,.11);
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 2px solid #00c6a7;
+  text-align: center;
+}
+.search-section h2 {
+  margin-top: 0;
+  color: #008cff;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #00c6a7;
+  letter-spacing: 0.5px;
+}
+input[type="text"], input[type="date"], input[type="tel"], input[type="number"], input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 2px solid #008cff;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  background: #f1f9ff;
+  transition: border 0.2s;
+  font-family: 'Montserrat', sans-serif;
+}
+input:focus {
+  border: 2px solid #00c6a7;
+  outline: none;
+}
+.search-btn {
+  background: linear-gradient(90deg, #008cff 70%, #00c6a7 100%);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 0.7rem;
+  font-size: 1.12rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,140,255,.15);
+  transition: background 0.3s, box-shadow 0.2s;
+  margin-top: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.search-btn:hover {
+  background: linear-gradient(90deg, #00c6a7 70%, #008cff 100%);
+  box-shadow: 0 4px 16px #00c6a7;
+}
+#trip-list, #admin-trip-list {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.ride-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(0,140,255,.22), 0 0.5px 2px rgba(0,198,167,.14);
+  padding: 1.2rem 2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-left: 8px solid #00c6a7;
+  border-right: 5px solid #008cff;
+  position: relative;
+}
+.ride-card strong {
+  color: #008cff;
+}
+.book-btn, .edit-btn, .delete-btn {
+  background: linear-gradient(90deg, #00c6a7 70%, #008cff 100%);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: flex-end;
+  transition: background 0.3s;
+  margin-right: 8px;
+  box-shadow: 0 2px 8px #00c6a7;
+  font-family: 'Montserrat', sans-serif;
+}
+.book-btn:hover, .edit-btn:hover, .delete-btn:hover {
+  background: linear-gradient(90deg, #008cff 70%, #00c6a7 100%);
+}
+.add-icon {
+  font-size: 2rem !important;
+  color: #00c6a7;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+.add-icon:hover {
+  color: #008cff;
+}
+footer {
+  background: rgba(34,34,34,0.85);
+  color: #eee;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 12px #008cff;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background: #fff;
+  margin: 8% auto;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 2px 22px #00c6a7;
+  border: 2px solid #008cff;
+}
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close:hover {
+  color: #008cff;
+}
+@media (max-width: 700px) {
+  .center-section, .search-section, #trip-list, #admin-trip-list { max-width: 99vw; padding: 1rem; }
+  .ride-card { padding: 1rem 1rem; }
+  .logo { font-size: 1.35rem; }
+}
